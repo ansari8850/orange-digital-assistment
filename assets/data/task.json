@@ -1,0 +1,133 @@
+{
+    "quiz_title": "Mid-Term Examination - Physics",
+    "quiz_duration": 3600,
+    "total_marks": 50,
+    "passing_marks": 18,
+    "instructions": "Answer all questions. Negative marking applies only to objective questions.",
+    "questions": [
+        {
+            "question_id": "Q1",
+            "question_type": "objective",
+            "question_text": "What is the capital of France?",
+            "options": [
+                {
+                    "option_text": "Paris",
+                    "is_correct": true
+                },
+                {
+                    "option_text": "London",
+                    "is_correct": false
+                },
+                {
+                    "option_text": "Berlin",
+                    "is_correct": false
+                },
+                {
+                    "option_text": "Madrid",
+                    "is_correct": false
+                }
+            ],
+            "positive_marks": 4,
+            "negative_marks": 1,
+            "has_sub_questions": false,
+            "sub_questions": []
+        },
+        {
+            "question_id": "Q2",
+            "question_type": "subjective",
+            "question_text": "Explain Newton's Second Law of Motion with a real-world example.",
+            "options": [],
+            "positive_marks": 10,
+            "negative_marks": 0,
+            "word_limit": 300,
+            "answer_key": "Force equals mass times acceleration. Example: pushing a shopping cart...",
+            "has_sub_questions": false,
+            "sub_questions": []
+        },
+        {
+            "question_id": "Q3",
+            "question_type": "multi_select",
+            "question_text": "Which of these are prime numbers?",
+            "options": [
+                {
+                    "option_text": "2",
+                    "is_correct": true
+                },
+                {
+                    "option_text": "4",
+                    "is_correct": false
+                },
+                {
+                    "option_text": "7",
+                    "is_correct": true
+                }
+            ],
+            "positive_marks": 3,
+            "negative_marks": 1,
+            "has_sub_questions": false,
+            "sub_questions": []
+        },
+        {
+            "question_id": "Q4",
+            "question_type": "comprehension",
+            "question_text": "Read the passage below and answer the sub-questions that follow.",
+            "passage": "The water cycle describes the continuous movement of water within the Earth and atmosphere...",
+            "options": [],
+            "positive_marks": 0,
+            "negative_marks": 0,
+            "has_sub_questions": true,
+            "sub_questions": [
+                {
+                    "question_id": "Q4.a",
+                    "question_type": "objective",
+                    "question_text": "What process converts water vapor into liquid water?",
+                    "options": [
+                        {
+                            "option_text": "Evaporation",
+                            "is_correct": false
+                        },
+                        {
+                            "option_text": "Condensation",
+                            "is_correct": true
+                        },
+                        {
+                            "option_text": "Precipitation",
+                            "is_correct": false
+                        }
+                    ],
+                    "positive_marks": 3,
+                    "negative_marks": 1
+                },
+                {
+                    "question_id": "Q4.b",
+                    "question_type": "subjective",
+                    "question_text": "Describe two human activities that disrupt the natural water cycle.",
+                    "options": [],
+                    "positive_marks": 5,
+                    "negative_marks": 0,
+                    "word_limit": 150,
+                    "answer_key": "Deforestation and urbanization reduce natural water absorption..."
+                }
+            ]
+        },
+        {
+            "question_id": "Q5",
+            "question_type": "true_false",
+            "question_text": "Is water composed of Hydrogen and Oxygen?",
+            "options": [
+                {
+                    "option_text": "True",
+                    "is_correct": true
+                },
+                {
+                    "option_text": "False",
+                    "is_correct": false
+                }
+            ],
+            "positive_marks": 2,
+            "negative_marks": 0.5,
+            "has_sub_questions": false,
+            "sub_questions": []
+        }
+    ]
+}
