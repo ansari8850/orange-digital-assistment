@@ -143,12 +143,11 @@ class AnswerReview extends StatelessWidget {
     if (selectedAnswerIds.isEmpty) return 'Not answered';
     
     final selectedTexts = selectedAnswerIds.map((id) {
-      final option = question.options.firstWhere(
-        (opt) => opt.id == id,
-        orElse: () => null,
-      );
+      final option = (question.options as Iterable)
+          .where((opt) => opt.id == id)
+          .firstOrNull;
       return option?.text ?? id;
-    }).where((text) => text != null).toList();
+    }).toList();
     
     return selectedTexts.join(', ');
   }

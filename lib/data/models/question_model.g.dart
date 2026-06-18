@@ -11,15 +11,17 @@ QuestionModel _$QuestionModelFromJson(Map<String, dynamic> json) =>
       id: json['question_id'] as String,
       type: $enumDecode(_$QuestionTypeModelEnumMap, json['question_type']),
       text: json['question_text'] as String,
-      options: (json['options'] as List<dynamic>)
-          .map((e) => AnswerModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
+      options: (json['options'] as List<dynamic>?)
+              ?.map((e) => AnswerModel.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          [],
       positiveMarks: (json['positive_marks'] as num).toDouble(),
       negativeMarks: (json['negative_marks'] as num).toDouble(),
-      hasSubQuestions: json['has_sub_questions'] as bool,
-      subQuestions: (json['sub_questions'] as List<dynamic>)
-          .map((e) => QuestionModel.fromJson(e as Map<String, dynamic>))
-          .toList(),
+      hasSubQuestions: json['has_sub_questions'] as bool? ?? false,
+      subQuestions: (json['sub_questions'] as List<dynamic>?)
+              ?.map((e) => QuestionModel.fromJson(e as Map<String, dynamic>))
+              .toList() ??
+          [],
       passage: json['passage'] as String?,
       wordLimit: (json['word_limit'] as num?)?.toInt(),
       answerKey: json['answer_key'] as String?,

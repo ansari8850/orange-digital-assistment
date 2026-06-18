@@ -28,7 +28,7 @@ class QuestionModel {
   @JsonKey(name: 'question_text')
   final String text;
   
-  @JsonKey(name: 'options')
+  @JsonKey(name: 'options', defaultValue: [])
   final List<AnswerModel> options;
   
   @JsonKey(name: 'positive_marks')
@@ -37,10 +37,10 @@ class QuestionModel {
   @JsonKey(name: 'negative_marks')
   final double negativeMarks;
   
-  @JsonKey(name: 'has_sub_questions')
+  @JsonKey(name: 'has_sub_questions', defaultValue: false)
   final bool hasSubQuestions;
   
-  @JsonKey(name: 'sub_questions')
+  @JsonKey(name: 'sub_questions', defaultValue: [])
   final List<QuestionModel> subQuestions;
   
   @JsonKey(name: 'passage')

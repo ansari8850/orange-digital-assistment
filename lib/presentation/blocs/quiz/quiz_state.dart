@@ -74,13 +74,7 @@ class QuizState extends Equatable {
   
   int get _totalQuestions {
     if (quiz == null) return 0;
-    int count = quiz!.questions.length;
-    for (final question in quiz!.questions) {
-      if (question.hasSubQuestions) {
-        count += question.subQuestions.length;
-      }
-    }
-    return count;
+    return quiz!.allQuestions.length;
   }
   
   int get totalQuestions => _totalQuestions;
