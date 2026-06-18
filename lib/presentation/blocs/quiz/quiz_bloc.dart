@@ -1,12 +1,9 @@
-import 'package:bloc/bloc.dart';
-import 'package:equatable/equatable.dart';
-import '../../../domain/entities/quiz.dart';
-import '../../../domain/entities/user_response.dart';
-import '../../../domain/entities/quiz_result.dart';
-import '../../../domain/repositories/quiz_repository.dart';
-import '../../../domain/usecases/get_quiz.dart';
-import '../../../domain/usecases/calculate_result.dart';
-import '../../../core/errors/failures.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:assistment/domain/entities/user_response.dart';
+import 'package:assistment/domain/repositories/quiz_repository.dart';
+import 'package:assistment/domain/usecases/get_quiz.dart';
+import 'package:assistment/domain/usecases/calculate_result.dart';
+import 'package:assistment/core/errors/failures.dart';
 import 'quiz_event.dart';
 import 'quiz_state.dart';
 

@@ -6,7 +6,7 @@ abstract class QuizEvent extends Equatable {
   const QuizEvent();
 
   @override
-  List<Object> get props => [];
+  List<Object?> get props => [];
 }
 
 class QuizStarted extends QuizEvent {}
@@ -23,7 +23,7 @@ class QuizLoaded extends QuizEvent {
   });
 
   @override
-  List<Object> get props => [quizTitle, totalQuestions, duration];
+  List<Object?> get props => [quizTitle, totalQuestions, duration];
 }
 
 class QuestionNavigated extends QuizEvent {
@@ -32,7 +32,7 @@ class QuestionNavigated extends QuizEvent {
   QuestionNavigated(this.questionIndex);
 
   @override
-  List<Object> get props => [questionIndex];
+  List<Object?> get props => [questionIndex];
 }
 
 class AnswerSubmitted extends QuizEvent {
@@ -47,7 +47,7 @@ class AnswerSubmitted extends QuizEvent {
   });
 
   @override
-  List<Object> get props => [questionId, selectedAnswerIds, textAnswer];
+  List<Object?> get props => [questionId, selectedAnswerIds, textAnswer];
 }
 
 class QuizSubmitted extends QuizEvent {
@@ -60,7 +60,7 @@ class QuizSubmitted extends QuizEvent {
   });
 
   @override
-  List<Object> get props => [responses, timeTaken];
+  List<Object?> get props => [responses, timeTaken];
 }
 
 class QuizCompleted extends QuizEvent {
@@ -69,7 +69,7 @@ class QuizCompleted extends QuizEvent {
   QuizCompleted(this.result);
 
   @override
-  List<Object> get props => [result];
+  List<Object?> get props => [result];
 }
 
 class QuizReset extends QuizEvent {}

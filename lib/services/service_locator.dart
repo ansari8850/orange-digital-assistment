@@ -1,12 +1,11 @@
 import 'package:get_it/get_it.dart';
-import 'package:injectable/injectable.dart';
-import '../data/datasources/local/quiz_local_datasource.dart';
-import '../data/repositories/quiz_repository_impl.dart';
-import '../domain/repositories/quiz_repository.dart';
-import '../domain/usecases/get_quiz.dart';
-import '../domain/usecases/calculate_result.dart';
-import '../presentation/blocs/quiz/quiz_bloc.dart';
-import '../presentation/blocs/timer/timer_bloc.dart';
+import 'package:assistment/data/datasources/local/quiz_local_datasource.dart';
+import 'package:assistment/data/repositories/quiz_repository_impl.dart';
+import 'package:assistment/domain/repositories/quiz_repository.dart';
+import 'package:assistment/domain/usecases/get_quiz.dart';
+import 'package:assistment/domain/usecases/calculate_result.dart';
+import 'package:assistment/presentation/blocs/quiz/quiz_bloc.dart';
+import 'package:assistment/presentation/blocs/timer/timer_bloc.dart';
 
 final GetIt sl = GetIt.instance;
 

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/app_constants.dart';
-import '../../../domain/entities/question.dart';
-import '../../../domain/entities/user_response.dart';
-import 'option_widget.dart';
-import 'text_answer_widget.dart';
+import 'package:assistment/core/constants/app_constants.dart';
+import 'package:assistment/domain/entities/question.dart';
+import 'package:assistment/domain/entities/user_response.dart';
+import 'package:assistment/presentation/pages/question/widgets/option_widget.dart';
+import 'package:assistment/presentation/pages/question/widgets/text_answer_widget.dart';
 
 class QuestionCard extends StatefulWidget {
   final Question question;

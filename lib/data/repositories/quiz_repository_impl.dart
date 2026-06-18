@@ -1,13 +1,11 @@
-import '../../domain/entities/quiz.dart';
-import '../../domain/entities/user_response.dart';
-import '../../domain/entities/quiz_result.dart';
-import '../../domain/repositories/quiz_repository.dart';
-import '../../core/errors/failures.dart';
-import '../../core/errors/exceptions.dart';
-import '../datasources/local/quiz_local_datasource.dart';
-import '../models/quiz_model.dart';
-import '../models/user_response_model.dart';
-import '../../domain/usecases/calculate_result.dart';
+import 'package:assistment/domain/entities/quiz.dart';
+import 'package:assistment/domain/entities/user_response.dart';
+import 'package:assistment/domain/entities/quiz_result.dart';
+import 'package:assistment/domain/repositories/quiz_repository.dart';
+import 'package:assistment/core/errors/failures.dart';
+import 'package:assistment/core/errors/exceptions.dart';
+import 'package:assistment/data/datasources/local/quiz_local_datasource.dart';
+import 'package:assistment/domain/usecases/calculate_result.dart';
 
 class QuizRepositoryImpl implements QuizRepository {
   final QuizLocalDataSource localDataSource;
@@ -42,6 +40,7 @@ class QuizRepositoryImpl implements QuizRepository {
         CalculateResultParams(
           quiz: quiz,
           responses: responses,
+          timeTaken: 0,
         ),
       );
       return result;

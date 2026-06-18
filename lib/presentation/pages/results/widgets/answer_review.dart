@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:assistment/core/constants/app_constants.dart';
 import 'package:assistment/domain/entities/quiz.dart';
 import 'package:assistment/domain/entities/quiz_result.dart';
-import 'package:assistment/presentation/blocs/quiz/quiz_bloc.dart';
 
 class AnswerReview extends StatelessWidget {
   final Quiz quiz;

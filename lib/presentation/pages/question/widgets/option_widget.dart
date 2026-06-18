@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/app_constants.dart';
-import '../../../domain/entities/answer.dart';
+import 'package:assistment/core/constants/app_constants.dart';
+import 'package:assistment/domain/entities/answer.dart';
 
 class OptionWidget extends StatelessWidget {
   final Answer option;

@@ -1,9 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/services.dart';
-import 'package:dartz/dartz.dart';
-import '../../models/quiz_model.dart';
-import '../../../core/errors/exceptions.dart';
-import '../../../core/errors/failures.dart';
+import 'package:assistment/data/models/quiz_model.dart';
+import 'package:assistment/core/errors/exceptions.dart';
 
 abstract class QuizLocalDataSource {
   Future<QuizModel> getQuiz();

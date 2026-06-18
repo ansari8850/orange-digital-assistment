@@ -1,4 +1,3 @@
-import '../constants/app_constants.dart';
 
 class ValidationUtils {
   static int countWords(String text) {
